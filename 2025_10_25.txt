@@ -34,3 +34,9 @@ const cc = async () => {
 }
 
 cc();
+
+
+
+[몽고디비]
+id : ehdrud305501_db_user
+password : N0d49giZIL4dHdYC
