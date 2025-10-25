@@ -1,0 +1,36 @@
+Eslint
+-> 오류 분석 툴
+prettier
+-> 코드를 포멧에 맞게 정리 툴 
+
+
+// 비동기 테스트
+const delay =(ms) => {
+  return new Promise(resolve => setTimeout(resolve, ms))
+
+}
+
+const aa = async() => {
+  await delay(1000);
+  console.log("aa 로드 완료");
+  return 111;
+}
+
+const bb = async() =>{
+  await delay(3000);
+  console.log("bb 로드 완료");
+  return 222;
+}
+
+const dd = async() =>{
+  await delay(4000);
+  console.log("dd 로드 완료");
+  return 333
+}
+
+const cc = async () => {
+  const [resultA, resultB,resultD] = await Promise.all([aa(), bb(),dd()]);
+  console.log("모두 완료:", resultA, resultB,resultD);
+}
+
+cc();
