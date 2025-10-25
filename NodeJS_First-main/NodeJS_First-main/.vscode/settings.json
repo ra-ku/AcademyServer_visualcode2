@@ -1,0 +1,17 @@
+{
+  // 저장 시 자동 포맷팅
+  "editor.formatOnSave": true,
+  
+  // 기본 포맷터를 Prettier로 설정
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  
+  // 저장 시 ESLint 자동 수정
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  
+  // JavaScript 파일은 Prettier 사용
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
